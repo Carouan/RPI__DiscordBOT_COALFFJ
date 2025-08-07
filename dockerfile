@@ -9,6 +9,6 @@ COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Définir la commande de démarrage du bot
-CMD ["python", "-m", "bot/core.py"]
+CMD ["python", "-m", "src/DiscBot_COALFFJ/core.py"]
 
 
