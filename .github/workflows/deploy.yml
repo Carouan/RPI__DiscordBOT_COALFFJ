@@ -24,9 +24,10 @@ jobs:
         uses: appleboy/ssh-action@v1.1.0
         with:
           host: ${{ secrets.RPI_HOST }}
+          port: ${{ secrets.RPI_PORT }}
           username: ${{ secrets.RPI_USER }}
           key: ${{ secrets.RPI_SSH_KEY }}
-          port: 22
+          passphrase: ${{ secrets.SSH_PASSPHRASE }}           # Laisse vide sauf si ta clé est protégée par un mot de passe
           script: |
             cd /opt/discord-bot
             git reset --hard
