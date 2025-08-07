@@ -27,7 +27,7 @@ jobs:
           port: ${{ secrets.RPI_PORT }}
           username: ${{ secrets.RPI_USER }}
           key: ${{ secrets.RPI_SSH_KEY }}
-          passphrase: ${{ secrets.SSH_PASSPHRASE }}           # Laisse vide sauf si ta clé est protégée par un mot de passe
+          passphrase: ${{ secrets.SSH_PASSPHRASE }}
           script: |
             cd /opt/discord-bot
             git reset --hard
